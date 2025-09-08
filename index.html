@@ -3,13 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfólio Felipe Tormes</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #0073b1;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+    h1 {
+      margin: 0;
+      font-size: 2.2em;
+    }
+    main {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    .project {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+      margin-bottom: 20px;
+      padding: 20px;
+      transition: transform 0.2s;
+    }
+    .project:hover {
+      transform: translateY(-5px);
+    }
+    .project h2 {
+      margin-top: 0;
+      color: #0073b1;
+    }
+    .project p {
+      margin: 10px 0;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #0073b1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #005580;
+    }
+  </style>
 </head>
 <body>
-  <h1>Portfólio Felipe Tormes</h1>
-  <ul>
-    <li><a href="automacao-treinos/README.md" target="_blank">Automação de Treinos (Python)</a></li>
-    <li><a href="dashboard-corrida/README.md" target="_blank">Dashboard Web de Corrida (React)</a></li>
-    <li><a href="site-agenda-treinos/index.html" target="_blank">Site de Agenda de Treinos (HTML/CSS/JS)</a></li>
-  </ul>
+  <header>
+    <h1>Portfólio Felipe Tormes</h1>
+    <p>Desenvolvedor de Software | Automação, Dashboards, Sites Interativos</p>
+  </header>
+  <main>
+    <div class="project">
+      <h2>Automação de Treinos (Python)</h2>
+      <p>Script em Python para gerar relatórios semanais de treinos a partir de planilhas Excel.</p>
+      <a class="btn" href="automacao-treinos/README.md" target="_blank">Ver Projeto</a>
+    </div>
+
+    <div class="project">
+      <h2>Dashboard Web de Corrida (React)</h2>
+      <p>Dashboard interativo que exibe gráficos de km e pace médio por semana.</p>
+      <a class="btn" href="dashboard-corrida/README.md" target="_blank">Ver Projeto</a>
+    </div>
+
+    <div class="project">
+      <h2>Site de Agenda de Treinos (HTML/CSS/JS)</h2>
+      <p>Site simples para adicionar treinos e visualizar calendário semanal.</p>
+      <a class="btn" href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
+    </div>
+  </main>
 </body>
 </html>
