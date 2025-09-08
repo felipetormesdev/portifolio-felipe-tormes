@@ -11,39 +11,62 @@
       margin: 0;
       padding: 0;
     }
+
     header {
       background-color: #0073b1;
       color: white;
-      padding: 30px 20px;
+      padding: 40px 20px;
       text-align: center;
     }
-    h1 {
+
+    header h1 {
       margin: 0;
-      font-size: 2.2em;
+      font-size: 2.5em;
     }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
+
     .project {
       background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.15);
-      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin-bottom: 30px;
       padding: 20px;
+      display: flex;
+      align-items: center;
       transition: transform 0.2s;
     }
+
     .project:hover {
       transform: translateY(-5px);
     }
-    .project h2 {
-      margin-top: 0;
+
+    .project img {
+      width: 150px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    .project-content h2 {
+      margin: 0;
       color: #0073b1;
     }
-    .project p {
+
+    .project-content p {
       margin: 10px 0;
     }
+
     .btn {
       display: inline-block;
       padding: 10px 20px;
@@ -51,36 +74,76 @@
       color: white;
       text-decoration: none;
       border-radius: 5px;
-      transition: background-color 0.2s;
+      transition: background-color 0.3s, transform 0.2s;
     }
+
     .btn:hover {
       background-color: #005580;
+      transform: scale(1.05);
     }
+
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #1da1f2;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
+
   <header>
     <h1>Portfólio Felipe Tormes</h1>
     <p>Desenvolvedor de Software | Automação, Dashboards, Sites Interativos</p>
   </header>
+
   <main>
     <div class="project">
-      <h2>Automação de Treinos (Python)</h2>
-      <p>Script em Python para gerar relatórios semanais de treinos a partir de planilhas Excel.</p>
-      <a class="btn" href="automacao-treinos/README.md" target="_blank">Ver Projeto</a>
+      <img src="https://via.placeholder.com/150x100.png?text=Automacao" alt="Automação de Treinos">
+      <div class="project-content">
+        <h2>Automação de Treinos (Python)</h2>
+        <p>Script em Python para gerar relatórios semanais de treinos a partir de planilhas Excel.</p>
+        <a class="btn" href="automacao-treinos/README.md" target="_blank">Ver Projeto</a>
+      </div>
     </div>
 
     <div class="project">
-      <h2>Dashboard Web de Corrida (React)</h2>
-      <p>Dashboard interativo que exibe gráficos de km e pace médio por semana.</p>
-      <a class="btn" href="dashboard-corrida/README.md" target="_blank">Ver Projeto</a>
+      <img src="https://via.placeholder.com/150x100.png?text=Dashboard" alt="Dashboard Web">
+      <div class="project-content">
+        <h2>Dashboard Web de Corrida (React)</h2>
+        <p>Dashboard interativo que exibe gráficos de km e pace médio por semana.</p>
+        <a class="btn" href="dashboard-corrida/README.md" target="_blank">Ver Projeto</a>
+      </div>
     </div>
 
     <div class="project">
-      <h2>Site de Agenda de Treinos (HTML/CSS/JS)</h2>
-      <p>Site simples para adicionar treinos e visualizar calendário semanal.</p>
-      <a class="btn" href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
+      <img src="https://via.placeholder.com/150x100.png?text=Site+Agenda" alt="Site de Agenda">
+      <div class="project-content">
+        <h2>Site de Agenda de Treinos (HTML/CSS/JS)</h2>
+        <p>Site simples para adicionar treinos e visualizar calendário semanal.</p>
+        <a class="btn" href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
+      </div>
     </div>
   </main>
+
+  <footer>
+    <p>Contato: <a href="mailto:felipe.tormes.dev@gmail.com">felipe.tormes.dev@gmail.com</a></p>
+    <p>
+      <a href="https://github.com/felipetormesdev" target="_blank">GitHub</a> | 
+      <a href="https://linkedin.com/in/felipetormes" target="_blank">LinkedIn</a>
+    </p>
+  </footer>
+
 </body>
 </html>
