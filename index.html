@@ -2,147 +2,103 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Felipe Tormes</title>
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      color: #333;
+      background-color: #f9f9f9;
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #0073b1;
       color: white;
-      padding: 40px 20px;
+      padding: 20px;
       text-align: center;
     }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-
-    header p {
-      margin-top: 10px;
-      font-size: 1.2em;
-    }
-
-    main {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
-    }
-
-    .project {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-      margin-bottom: 30px;
-      padding: 20px;
+    h1 { margin: 0; }
+    .projects {
       display: flex;
-      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin: 20px;
+      gap: 20px;
+    }
+    .project-card {
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      overflow: hidden;
+      text-align: center;
       transition: transform 0.2s;
     }
-
-    .project:hover {
-      transform: translateY(-5px);
-    }
-
-    .project img {
-      width: 150px;
-      height: 100px;
+    .project-card:hover { transform: translateY(-5px); }
+    .project-card img {
+      width: 100%;
+      height: 180px;
       object-fit: cover;
-      border-radius: 5px;
-      margin-right: 20px;
     }
-
-    .project-content h2 {
-      margin: 0;
+    .project-card h2 {
+      margin: 10px 0;
+      font-size: 20px;
       color: #0073b1;
     }
-
-    .project-content p {
-      margin: 10px 0;
-    }
-
-    .btn {
+    .project-card a {
       display: inline-block;
-      padding: 10px 20px;
+      margin-bottom: 15px;
+      padding: 8px 16px;
       background-color: #0073b1;
       color: white;
       text-decoration: none;
-      border-radius: 5px;
-      transition: background-color 0.3s, transform 0.2s;
+      border-radius: 6px;
+      transition: background-color 0.2s;
     }
-
-    .btn:hover {
-      background-color: #005580;
-      transform: scale(1.05);
-    }
-
+    .project-card a:hover { background-color: #005f87; }
     footer {
-      background-color: #333;
-      color: white;
-      padding: 30px 20px;
       text-align: center;
+      padding: 20px;
+      background-color: #eee;
+      margin-top: 40px;
     }
-
-    footer a {
-      color: #1da1f2;
-      text-decoration: none;
-      margin: 0 10px;
-    }
-
-    footer a:hover {
-      text-decoration: underline;
-    }
-
   </style>
 </head>
 <body>
 
   <header>
     <h1>Portfólio Felipe Tormes</h1>
-    <p>Desenvolvedor de Software | Automação, Dashboards, Sites Interativos</p>
+    <p>Desenvolvimento Web e Automação de Treinos</p>
   </header>
 
-  <main>
-    <div class="project">
+  <section class="projects">
+
+    <!-- Projeto 1: Agenda de Treinos -->
+    <div class="project-card">
+      <img src="site-agenda-treinos/thumb.png" alt="Agenda de Treinos">
+      <h2>Agenda de Treinos</h2>
+      <a href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
+    </div>
+
+    <!-- Projeto 2: Dashboard Corrida -->
+    <div class="project-card">
+      <img src="dashboard-corrida/thumb.png" alt="Dashboard Corrida">
+      <h2>Dashboard Corrida</h2>
+      <a href="dashboard-corrida/index.html" target="_blank">Ver Projeto</a>
+    </div>
+
+    <!-- Projeto 3: Automação de Treinos -->
+    <div class="project-card">
       <img src="automacao-treinos/thumb.png" alt="Automação de Treinos">
-      <div class="project-content">
-        <h2>Automação de Treinos (Python)</h2>
-        <p>Script em Python para gerar relatórios semanais de treinos a partir de planilhas Excel.</p>
-        <a class="btn" href="automacao-treinos/README.md" target="_blank">Ver Projeto</a>
-      </div>
+      <h2>Automação de Treinos</h2>
+      <a href="automacao-treinos/generateThumbPython.py" target="_blank">Ver Código</a>
     </div>
 
-    <div class="project">
-      <img src="dashboard-corrida/thumb.png" alt="Dashboard Web">
-      <div class="project-content">
-        <h2>Dashboard Web de Corrida (React)</h2>
-        <p>Dashboard interativo que exibe gráficos de km e pace médio por semana.</p>
-        <a class="btn" href="dashboard-corrida/README.md" target="_blank">Ver Projeto</a>
-      </div>
-    </div>
-
-    <div class="project">
-      <img src="site-agenda-treinos/thumb.png" alt="Site de Agenda">
-      <div class="project-content">
-        <h2>Site de Agenda de Treinos (HTML/CSS/JS)</h2>
-        <p>Site simples para adicionar treinos e visualizar calendário semanal.</p>
-        <a class="btn" href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
-      </div>
-    </div>
-  </main>
+  </section>
 
   <footer>
     <p>Contato: <a href="mailto:felipe.tormes.dev@gmail.com">felipe.tormes.dev@gmail.com</a></p>
-    <p>
-      <a href="https://github.com/felipetormesdev" target="_blank">GitHub</a> | 
-      <a href="https://linkedin.com/in/felipetormes" target="_blank">LinkedIn</a>
-    </p>
+    <p>GitHub: <a href="https://github.com/felipetormesdev" target="_blank">https://github.com/felipetormesdev</a></p>
   </footer>
 
 </body>
