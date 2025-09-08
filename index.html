@@ -5,101 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfólio Felipe Tormes</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #0073b1;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    h1 { margin: 0; }
-    .projects {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin: 20px;
-      gap: 20px;
-    }
-    .project-card {
-      background-color: white;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      width: 300px;
-      overflow: hidden;
-      text-align: center;
-      transition: transform 0.2s;
-    }
+    body { font-family: Arial, sans-serif; background-color: #f9f9f9; margin:0; padding:0; }
+    header { background-color:#0073b1; color:white; padding:20px; text-align:center; }
+    h1{ margin:0; }
+    .projects { display:flex; flex-wrap:wrap; justify-content:center; margin:20px; gap:20px; }
+    .project-card { background:white; border-radius:12px; box-shadow:0 4px 8px rgba(0,0,0,0.1); width:300px; overflow:hidden; text-align:center; transition: transform 0.2s; }
     .project-card:hover { transform: translateY(-5px); }
-    .project-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-    }
-    .project-card h2 {
-      margin: 10px 0;
-      font-size: 20px;
-      color: #0073b1;
-    }
-    .project-card a {
-      display: inline-block;
-      margin-bottom: 15px;
-      padding: 8px 16px;
-      background-color: #0073b1;
-      color: white;
-      text-decoration: none;
-      border-radius: 6px;
-      transition: background-color 0.2s;
-    }
-    .project-card a:hover { background-color: #005f87; }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #eee;
-      margin-top: 40px;
-    }
+    .project-card img { width:100%; height:180px; object-fit:cover; }
+    .project-card h2 { margin:10px 0; font-size:20px; color:#0073b1; }
+    .project-card a { display:inline-block; margin-bottom:15px; padding:8px 16px; background-color:#0073b1; color:white; text-decoration:none; border-radius:6px; transition: background-color 0.2s; }
+    .project-card a:hover { background-color:#005f87; }
+    footer { text-align:center; padding:20px; background-color:#eee; margin-top:40px; }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Portfólio Felipe Tormes</h1>
-    <p>Desenvolvimento Web e Automação de Treinos</p>
-  </header>
+<header>
+  <h1>Portfólio Felipe Tormes</h1>
+  <p>Desenvolvimento Web e Automação de Treinos</p>
+</header>
 
-  <section class="projects">
+<section class="projects">
 
-    <!-- Projeto 1: Agenda de Treinos -->
-    <div class="project-card">
-      <img src="site-agenda-treinos/thumb.png" alt="Agenda de Treinos">
-      <h2>Agenda de Treinos</h2>
-      <a href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
-    </div>
+  <div class="project-card">
+    <img src="site-agenda-treinos/thumb.png" alt="Agenda de Treinos">
+    <h2>Agenda de Treinos</h2>
+    <a href="site-agenda-treinos/index.html" target="_blank">Ver Projeto</a>
+  </div>
 
-    <!-- Projeto 2: Dashboard Corrida -->
-    <div class="project-card">
-      <img src="dashboard-corrida/thumb.png" alt="Dashboard Corrida">
-      <h2>Dashboard Corrida</h2>
-      <a href="dashboard-corrida/index.html" target="_blank">Ver Projeto</a>
-    </div>
+  <div class="project-card">
+    <img src="dashboard-corrida/thumb.png" alt="Dashboard Corrida">
+    <h2>Dashboard Corrida</h2>
+    <a href="dashboard-corrida/index.html" target="_blank">Ver Projeto</a>
+  </div>
 
-    <!-- Projeto 3: Automação de Treinos -->
-    <div class="project-card">
-      <img src="automacao-treinos/thumb.png" alt="Automação de Treinos">
-      <h2>Automação de Treinos</h2>
-      <a href="automacao-treinos/generateThumbPython.py" target="_blank">Ver Código</a>
-    </div>
+  <div class="project-card">
+    <img src="automacao-treinos/thumb.png" alt="Automação de Treinos">
+    <h2>Automação de Treinos</h2>
+    <a href="automacao-treinos/index.html" target="_blank">Ver Projeto</a>
+  </div>
 
-  </section>
+</section>
 
-  <footer>
-    <p>Contato: <a href="mailto:felipe.tormes.dev@gmail.com">felipe.tormes.dev@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/felipetormesdev" target="_blank">https://github.com/felipetormesdev</a></p>
-  </footer>
+<footer>
+  <p>Contato: <a href="mailto:felipe.tormes.dev@gmail.com">felipe.tormes.dev@gmail.com</a></p>
+  <p>GitHub: <a href="https://github.com/felipetormesdev" target="_blank">https://github.com/felipetormesdev</a></p>
+</footer>
 
 </body>
 </html>
