@@ -1,0 +1,23 @@
+{
+  "name": "portifolio-felipe-tormes",
+  "version": "1.0.0",
+  "description": "Olá! Sou desenvolvedor focado em automação, dashboards e sites interativos.   Tenho experiência em Python, JavaScript, React e integração com planilhas e APIs.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/felipetormesdev/portifolio-felipe-tormes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/felipetormesdev/portifolio-felipe-tormes/issues"
+  },
+  "homepage": "https://github.com/felipetormesdev/portifolio-felipe-tormes#readme",
+  "dependencies": {
+    "puppeteer": "^24.19.0"
+  }
+}
